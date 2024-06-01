@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-cluster-ip-service
+spec:
+  type: ClusterIP
+  # spec.clusterIP set to None to make it headless service. We can't change clusterIP value of already created service. We need to destroy and recreate the service.
+  clusterIP: None
+  selector:
+    component: postgres
+  ports:
+    - port: 5432
+      targetPort: 5432

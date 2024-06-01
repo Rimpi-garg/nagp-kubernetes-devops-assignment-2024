@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: server-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - name: server
+          image: rimpigarg/nagp-server
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "500m"
+          env:
+            - name: PGUSER
+              valueFrom:
+                configMapKeyRef:
+                  name: application-config
+                  key: PGUSER
+            - name: PGHOST
+              valueFrom:
+                configMapKeyRef:
+                  name: application-config
+                  key: PGHOST
+            - name: PGPORT
+              valueFrom:
+                configMapKeyRef:
+                  name: application-config
+                  key: PGPORT
+            - name: PGDATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: application-config
+                  key: PGDATABASE
+            - name: PGPASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: pgpassword
+                  key: PGPASSWORD
