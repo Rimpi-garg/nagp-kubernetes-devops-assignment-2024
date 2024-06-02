@@ -2,14 +2,14 @@
 
 ## Contributor Details
 
-**Name:**  Rimpi
+**Name:**  Rimpi   
 **Email:** rimpi@nagarro.com
 
 ## Project Artifacts
 
 ### Source Code Repository
 The source code for this project can be found at the following link:
-[Source Code Repository](#)
+[Source Code Repository](https://github.com/Rimpi-garg/nagp-kubernetes-devops-assignment-2024.git)
 
 ### Docker Images
 The Docker images for this project are hosted on Docker Hub and can be found at the following link:
@@ -22,4 +22,4 @@ The Service API is currently not deployed on any cloud platform due to platform 
 
 ### Demonstration Video
 A screen recording demonstrating the functionality of the project can be found at the following link:
-[Screen Recording](#)
+[Screen Recording](https://github.com/Rimpi-garg/nagp-kubernetes-devops-assignment-2024)

@@ -5,7 +5,9 @@
 5. kubectl get statefulset
 6. kubectl scale statefulsets postgres-statefulset --replicas=0
 #### increase load on pod
-7. kubectl exec server-replicaset-mhh8t -- ../bin/sh -c "while true; do echo 'CPU stress'; done"
+7. kubectl exec server-replicaset-457pf -- ../bin/sh -c "while true; do echo 'CPU stress'; done"
+#### delete pod to decrease the load
+8. kubectl delete pod podname
 
 #### Metrics Server
 kubectl get deployment metrics-server -n kube-system
@@ -13,12 +15,12 @@ kubectl get deployment metrics-server -n kube-system
 kubectl create secret generic pgpassword --from-literal=PGPASSWORD=your_actual_password
 
 
-#manage some no of pods
+#manage some no of pods  - workload resource
 replicaset --deprecated
 deployments
 stateful-set
 
-#stablished communication b/w pods (services)
+#stablished communication b/w pods - services (enabled networking)
 clusterip
 node-port
 loadbalancer --deprecated
