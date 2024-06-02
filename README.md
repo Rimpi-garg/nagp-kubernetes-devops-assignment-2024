@@ -22,4 +22,4 @@ The Service API is currently not deployed on any cloud platform due to platform 
 
 ### Demonstration Video
 A screen recording demonstrating the functionality of the project can be found at the following link:
-[Screen Recording](https://github.com/Rimpi-garg/nagp-kubernetes-devops-assignment-2024)
+[Screen Recording](https://nagarro-my.sharepoint.com/:v:/p/rimpi/EXXk0umMJYxPkoQYKqh02yEBJLXM5OPGIeFo7JLDySP4tw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rbdbfO)
